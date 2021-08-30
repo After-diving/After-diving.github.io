@@ -1,0 +1,33 @@
+{
+   "title": "我的笔记",
+   "description": "学习是一点一点的积累",
+   "author": "爱潜水的鱼",
+   "language": "zh-hans", 
+   "link": {
+      "sidebar": {
+          "HOME": "https://www.baidu.com"
+      }
+   },
+   "plugins": [
+       "-lunr", "-search", "search-pro",
+       "back-to-top-button",
+       "chapter-fold",
+       "expandable-chapters-small",
+       "code",
+       "copy-code-button",
+       "advanced-emoji",
+       "splitter",
+       "prism",
+       "-highlight"
+   ],
+   "pluginsConfig": {
+    "code": {
+    "copyButtons": true
+    },
+    "prism": {
+        "css": [
+            "prismjs/themes/prism-tomorrow.css"
+        ]
+    }
+  }
+}
