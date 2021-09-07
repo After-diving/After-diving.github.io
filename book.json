@@ -11,8 +11,6 @@
    "plugins": [
        "-lunr", "-search", "search-pro",
        "back-to-top-button",
-       "chapter-fold",
-       "expandable-chapters-small",
        "code",
        "copy-code-button",
        "advanced-emoji",
