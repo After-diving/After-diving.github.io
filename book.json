@@ -10,7 +10,9 @@
    },
    "plugins": [
        "-lunr", "-search", "search-pro",
+       "chapter-fold",
        "back-to-top-button",
+       "expandable-chapters-small",
        "code",
        "copy-code-button",
        "advanced-emoji",
