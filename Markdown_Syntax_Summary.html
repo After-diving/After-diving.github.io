@@ -1,0 +1,894 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Markdown Syntax Summary · 我的笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="爱潜水的鱼">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="Markdown_Syntax_Summary.html">
+            
+                <a href="Markdown_Syntax_Summary.html">
+            
+                    
+                    Markdown Syntax Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Markdown Syntax Summary</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="markdown-syntax-summary">Markdown Syntax Summary</h1>
+<h2 id="&#x6807;&#x9898;">&#x6807;&#x9898;</h2>
+<pre class="language-"><code class="lang-markdown"><span class="token title important"><span class="token punctuation">#</span> //&#x4E00;&#x7EA7;&#x6807;&#x9898;, &#x8BB0;&#x5F97;#&#x540E;&#x9762;&#x6709;&#x7A7A;&#x683C;</span>
+<span class="token title important"><span class="token punctuation">##</span> //&#x4E8C;&#x7EA7;&#x6807;&#x9898;</span>
+<span class="token title important"><span class="token punctuation">###</span> //&#x4E09;&#x7EA7;&#x6807;&#x9898;</span>
+......&#x6700;&#x591A;&#x516D;&#x7EA7;&#x6807;&#x9898;
+</code></pre>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>&#x6807;&#x9898;1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>&#x6807;&#x9898;2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- &#x6700;&#x591A;&#x5230;&lt;h6&gt; --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>&#x6BB5;&#x843D;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h2 id="&#x5B57;&#x4F53;">&#x5B57;&#x4F53;</h2>
+<ol>
+<li>markdown&#x8BED;&#x6CD5;</li>
+</ol>
+<pre class="language-"><code class="lang-markdown"><span class="token italic"><span class="token punctuation">*</span><span class="token content">&#x659C;&#x4F53;</span><span class="token punctuation">*</span></span>          <span class="token italic"><span class="token punctuation">_</span><span class="token content">&#x659C;&#x4F53;</span><span class="token punctuation">_</span></span> 
+<span class="token bold"><span class="token punctuation">**</span><span class="token content">&#x7C97;&#x4F53;</span><span class="token punctuation">**</span></span>       <span class="token bold"><span class="token punctuation">__</span><span class="token content">&#x7C97;&#x4F53;</span><span class="token punctuation">__</span></span>
+<span class="token bold"><span class="token punctuation">**</span><span class="token content"><span class="token italic"><span class="token punctuation">*</span><span class="token content">&#x7C97;&#x659C;&#x4F53;</span><span class="token punctuation">*</span></span></span><span class="token punctuation">**</span></span>   <span class="token bold"><span class="token punctuation">__</span><span class="token content"><span class="token italic"><span class="token punctuation">_</span><span class="token content">&#x7C97;&#x659C;&#x4F53;</span><span class="token punctuation">_</span></span></span><span class="token punctuation">__</span></span>
+</code></pre>
+<ol>
+<li>HTLM&#x8BED;&#x6CD5;</li>
+</ol>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>b</span><span class="token punctuation">&gt;</span></span>&#x7C97;&#x4F53;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>b</span><span class="token punctuation">&gt;</span></span>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span><span class="token punctuation">&gt;</span></span>&#x659C;&#x4F53;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">&gt;</span></span>&#x7740;&#x91CD;&#x6587;&#x5B57;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>small</span><span class="token punctuation">&gt;</span></span>&#x5C0F;&#x53F7;&#x5B57;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>small</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>&#x52A0;&#x91CD;&#x8BED;&#x6C14;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sub</span><span class="token punctuation">&gt;</span></span>&#x4E0B;&#x6807;&#x5B57;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sub</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sup</span><span class="token punctuation">&gt;</span></span>&#x4E0A;&#x6807;&#x5B57;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sup</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ins</span><span class="token punctuation">&gt;</span></span>&#x63D2;&#x5165;&#x5B57;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ins</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>del</span><span class="token punctuation">&gt;</span></span>&#x5220;&#x9664;&#x5B57;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>del</span><span class="token punctuation">&gt;</span></span>  
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;</span></span>&#x4E00;&#x6BB5;&#x7535;&#x8111;&#x4EE3;&#x7801; print(&quot;hello world&quot;)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mark</span><span class="token punctuation">&gt;</span></span>&#x6807;&#x8BB0;&#x8BED;&#x6CD5;&#x9AD8;&#x4EAE;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mark</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p><b>&#x7C97;&#x4F53;</b> <i>&#x659C;&#x4F53;</i> <em>&#x7740;&#x91CD;&#x6587;&#x5B57;</em>  <small>&#x5C0F;&#x53F7;&#x5B57;</small>  <strong>&#x52A0;&#x91CD;&#x8BED;&#x6C14;</strong>  <sub>&#x4E0B;&#x6807;&#x5B57;</sub>  <sup>&#x4E0A;&#x6807;&#x5B57;</sup>   <ins>&#x63D2;&#x5165;&#x5B57;</ins>  <del>&#x5220;&#x9664;&#x5B57;</del></p>
+<p><code>&#x4E00;&#x6BB5;&#x7535;&#x8111;&#x4EE3;&#x7801; print(&quot;hello world&quot;)</code></p>
+<p><mark>&#x6807;&#x8BB0;&#x8BED;&#x6CD5;&#x9AD8;&#x4EAE;</mark></p>
+<h3 id="css&#x6E32;&#x67D3;">css&#x6E32;&#x67D3;</h3>
+<blockquote>
+<p>css&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x65B9;&#x5F0F;&#x6DFB;&#x52A0;&#x5230;HTML&#x4E2D;</p>
+<ul>
+<li>&#x5185;&#x8054;&#x65B9;&#x5F0F;: &#x5728;HTML&#x5143;&#x7D20;&#x4E2D;&#x4F7F;&#x7528;<code>style</code>&#x5C5E;&#x6027;</li>
+<li>&#x5185;&#x90E8;&#x6837;&#x5F0F;&#x8868;: &#x5728;HTML&#x6587;&#x6863;&#x5934;&#x90E8;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span></code>&#x533A;&#x57DF;&#x4F7F;&#x7528; <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span></code>&#x5143;&#x7D20;&#x6765;&#x5305;&#x542B;css</li>
+<li>&#x5916;&#x90E8;&#x5F15;&#x7528;: &#x4F7F;&#x7528;&#x5916;&#x90E8;css&#x6587;&#x4EF6;</li>
+</ul>
+</blockquote>
+<h4 id="&#x5185;&#x8054;&#x6837;&#x5F0F;">&#x5185;&#x8054;&#x6837;&#x5F0F;</h4>
+<p>&#x5F53;&#x7279;&#x6B8A;&#x6837;&#x5F0F;&#x9700;&#x8981;&#x8FD0;&#x7528;&#x5230;&#x4E2A;&#x522B;&#x5143;&#x7D20;&#x65F6;,&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5185;&#x8054;&#x6837;&#x5F0F;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">color</span><span class="token punctuation">:</span>blue<span class="token punctuation">;</span><span class="token property">margin-left</span><span class="token punctuation">:</span>20px<span class="token punctuation">;</span></span><span class="token punctuation">&quot;</span></span></span><span class="token punctuation">&gt;</span></span>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6BB5;&#x843D;&#x3002;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p></p><p style="color:blue;margin-left:20px;">&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6BB5;&#x843D;&#x3002;</p><p></p>
+<table border="2px">
+    <caption style="text-align:center;">style &#x5C5E;&#x6027;</caption>
+    <tr>
+        <th style="text-align:center;">&#x5C5E;&#x6027;</th>
+        <th style="text-align:center;">&#x53C2;&#x6570;</th>
+        <th style="text-align:center;">&#x5C5E;&#x6027;</th>
+        <th style="text-align:center;">&#x53C2;&#x6570;</th>
+    </tr>
+    <tr>
+        <td style="text-align:center;">color</td>
+        <td style="text-align:center;">red,blue,yellow...</td>
+        <td style="text-align:center;">margin-left</td>
+        <td style="text-align:center;">20px(&#x5DE6;&#x7A7A;&#x4E24;&#x683C;)</td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">font-family</td>
+        <td style="text-align:center;">&#x5B57;&#x4F53;&#x6837;&#x5F0F;...</td>
+        <td style="text-align:center;">font-size</td>
+        <td style="text-align:center;">&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x5B9A;&#x4E49;(&#x5355;&#x4F4D;px)...</td>
+    </tr>
+        <tr>
+        <td style="text-align:center;">text-align</td>
+        <td style="text-align:center;">center,left,right</td>
+        <td style="text-align:center;">background-color</td>
+        <td style="text-align:center;">red,green,blue...</td>
+    </tr>
+</table>
+
+
+<h4 id="&#x5185;&#x90E8;&#x6837;&#x5F0F;&#x8868;">&#x5185;&#x90E8;&#x6837;&#x5F0F;&#x8868;</h4>
+<p>&#x5F53;&#x5355;&#x4E2A;&#x6587;&#x4EF6;&#x9700;&#x8981;&#x7279;&#x522B;&#x6837;&#x5F0F;&#x65F6;,&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5185;&#x90E8;&#x6837;&#x5F0F;&#x8868;,&#x4F60;&#x53EF;&#x4EE5;&#x5728;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span></code>&#x90E8;&#x5206;&#x901A;&#x8FC7;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span></code>&#x6807;&#x7B7E;&#x5B9A;&#x4E49;&#x5185;&#x90E8;&#x6837;&#x5F0F;&#x8868;</p>
+<pre class="language-"><code class="lang-css"><span class="token selector">&lt;head&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+body</span> <span class="token punctuation">{</span><span class="token property">background-color</span><span class="token punctuation">:</span>yellow<span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token selector">p</span> <span class="token punctuation">{</span><span class="token property">color</span><span class="token punctuation">:</span>blue<span class="token punctuation">;</span><span class="token punctuation">}</span>
+&lt;/style&gt;
+&lt;/head&gt;
+</code></pre>
+<h4 id="&#x5916;&#x90E8;&#x6837;&#x5F0F;&#x8868;">&#x5916;&#x90E8;&#x6837;&#x5F0F;&#x8868;</h4>
+<p>&#x5F53;&#x6837;&#x5F0F;&#x9700;&#x8981;&#x88AB;&#x5E94;&#x7528;&#x5230;&#x5F88;&#x591A;&#x9875;&#x9762;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5916;&#x90E8;&#x6837;&#x5F0F;&#x8868;&#x5C06;&#x662F;&#x7406;&#x60F3;&#x7684;&#x9009;&#x62E9;&#x3002;&#x4F7F;&#x7528;&#x5916;&#x90E8;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x66F4;&#x6539;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x6765;&#x6539;&#x53D8;&#x6574;&#x4E2A;&#x7AD9;&#x70B9;&#x7684;&#x5916;&#x89C2;&#x3002;</p>
+<pre class="language-"><code class="lang-css">&lt;head&gt;
+&lt;link rel=<span class="token string">&quot;stylesheet&quot;</span> type=<span class="token string">&quot;text/css&quot;</span> href=<span class="token string">&quot;mystyle.css&quot;</span>&gt;
+&lt;/head&gt;
+</code></pre>
+<h2 id="&#x7EBF;">&#x7EBF;</h2>
+<h3 id="&#x5206;&#x5272;&#x7EBF;">&#x5206;&#x5272;&#x7EBF;</h3>
+<p>   &#x5728;&#x4E00;&#x884C;&#x4E2D;&#x7528;&#x4E09;&#x4E2A;&#x4EE5;&#x4E0A;&#x7684;&#x661F;&#x53F7;&#x3001;&#x51CF;&#x53F7;&#x3001;&#x5E95;&#x7EBF;&#x6765;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x5206;&#x5272;&#x7EBF;&#xFF0C;&#x884C;&#x5185;&#x4E0D;&#x80FD;&#x6709;&#x5176;&#x4ED6;&#x4E1C;&#x897F;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4E09;&#x4E2A;&#x7B26;&#x5408;&#x4E2D;&#x95F4;&#x63D2;&#x5165;&#x7A7A;&#x683C;&#xFF0C;&#x90FD;&#x80FD;&#x5EFA;&#x7ACB;&#x5206;&#x5272;&#x7EBF;&#x3002;</p>
+<pre class="language-"><code class="lang-markdown"><span class="token hr punctuation">***</span>
+<span class="token title important">___
+<span class="token punctuation">---</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<hr>
+<hr>
+<hr>
+<hr>
+
+<h3 id="&#x5220;&#x9664;&#x7EBF;">&#x5220;&#x9664;&#x7EBF;</h3>
+<p>&#x53EA;&#x9700;&#x5728;&#x6587;&#x5B57;&#x4E24;&#x7AEF;&#x52A0;&#x4E0A;&#x4E24;&#x4E2A;<code>~~</code>&#x53F7;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;</p>
+<pre class="language-"><code class="lang-markdown"><span class="token strike"><span class="token punctuation">~~</span><span class="token content">&#x5220;&#x9664;&#x7EBF;</span><span class="token punctuation">~~</span></span>
+</code></pre>
+<h3 id="&#x4E0B;&#x5212;&#x7EBF;">&#x4E0B;&#x5212;&#x7EBF;</h3>
+<p>&#x4E0B;&#x5212;&#x7EBF;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;HTLM&#x7684;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>u</span><span class="token punctuation">&gt;</span></span></code>&#x6807;&#x7B7E;&#x6765;&#x5B9E;&#x73B0;</p>
+<pre class="language-"><code class="lang-HTLM"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>u</span><span class="token punctuation">&gt;</span></span>&#x4E0B;&#x5212;&#x7EBF;&#x6587;&#x672C;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>u</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p><u>&#x4E0B;&#x5212;&#x7EBF;&#x6587;&#x672C;</u></p>
+<h2 id="&#x811A;&#x6CE8;">&#x811A;&#x6CE8;</h2>
+<p>&#x811A;&#x6CE8;&#x662F;&#x5BF9;&#x6587;&#x672C;&#x7684;&#x8865;&#x5145;&#x8BF4;&#x660E;.</p>
+<pre class="language-"><code class="lang-markdown">[^&#x8981;&#x6CE8;&#x660E;&#x7684;&#x6587;&#x672C;]
+example
+
+[^Markdown]&#x662F;&#x4E00;&#x79CD;&#x8BED;&#x6CD5;.
+
+[^Markdown]:&#x6587;&#x672C;&#x7F16;&#x8F91;&#x8BED;&#x8A00;
+</code></pre>
+<p><sup><a href="#fn_Markdown" id="reffn_Markdown">Markdown</a></sup>&#x662F;&#x4E00;&#x79CD;&#x8BED;&#x6CD5;.</p>
+<h2 id="&#x5217;&#x8868;">&#x5217;&#x8868;</h2>
+<h3 id="&#x65E0;&#x5E8F;&#x5217;&#x8868;">&#x65E0;&#x5E8F;&#x5217;&#x8868;</h3>
+<p>&#x4F7F;&#x7528;&#x661F;&#x53F7;(*), &#x52A0;&#x53F7;(+), &#x51CF;&#x53F7;(-). &#x4F5C;&#x4E3A;&#x5217;&#x8868;&#x6807;&#x8BB0;, &#x8FD9;&#x4E9B;&#x6807;&#x8BB0;&#x540E;&#x9762;&#x8981;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;,&#x7136;&#x540E;&#x586B;&#x5199;&#x5185;&#x5BB9;.</p>
+<pre class="language-"><code class="lang-markdown"><span class="token list punctuation">*</span> &#x7B2C;&#x4E00;&#x9879;
+<span class="token list punctuation">*</span> &#x7B2C;&#x4E8C;&#x9879;
+<span class="token list punctuation">*</span> &#x7B2C;&#x4E09;&#x9879;
+</code></pre>
+<h3 id="&#x6709;&#x5E8F;&#x5217;&#x8868;">&#x6709;&#x5E8F;&#x5217;&#x8868;</h3>
+<p>&#x4F7F;&#x7528;&#x6570;&#x5B57;&#x52A0;&#x4E0A;(.)&#x4F5C;&#x4E3A;&#x5217;&#x8868;&#x6807;&#x8BB0;,&#x540E;&#x9762;&#x8DDF;&#x7A7A;&#x683C;&#x548C;&#x586B;&#x5199;&#x5185;&#x5BB9;.</p>
+<pre class="language-"><code class="lang-markdown"><span class="token list punctuation">1.</span> &#x7B2C;&#x4E00;&#x9879;
+<span class="token list punctuation">2.</span> &#x7B2C;&#x4E8C;&#x9879;
+<span class="token list punctuation">3.</span> &#x7B2C;&#x4E09;&#x9879;
+</code></pre>
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x5217;&#x8868;">&#x81EA;&#x5B9A;&#x4E49;&#x5217;&#x8868;</h3>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dl</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span class="token punctuation">&gt;</span></span>Coffee<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">&gt;</span></span>- black hot drink<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span class="token punctuation">&gt;</span></span>Milk<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">&gt;</span></span>- white cold drink<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dl</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<dl>
+<dt>Coffee</dt>
+<dd>- black hot drink</dd>
+<dt>Milk</dt>
+<dd>- white cold drink</dd>
+</dl>
+
+<h3 id="&#x5217;&#x8868;&#x5D4C;&#x5957;">&#x5217;&#x8868;&#x5D4C;&#x5957;</h3>
+<p>&#x53EA;&#x9700;&#x8981;&#x5728;&#x5B50;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x9009;&#x9879;&#x524D;&#x9762;&#x52A0;&#x56DB;&#x4E2A;&#x7A7A;&#x683C;&#x5373;&#x53EF;.</p>
+<pre class="language-"><code class="lang-markdown"><span class="token list punctuation">1.</span> &#x7B2C;&#x4E00;&#x9879;&#xFF1A;
+    <span class="token list punctuation">-</span> &#x7B2C;&#x4E00;&#x9879;&#x5D4C;&#x5957;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;
+    <span class="token list punctuation">-</span> &#x7B2C;&#x4E00;&#x9879;&#x5D4C;&#x5957;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x5143;&#x7D20;
+<span class="token list punctuation">2.</span> &#x7B2C;&#x4E8C;&#x9879;&#xFF1A;
+    <span class="token list punctuation">-</span> &#x7B2C;&#x4E8C;&#x9879;&#x5D4C;&#x5957;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;
+    <span class="token list punctuation">-</span> &#x7B2C;&#x4E8C;&#x9879;&#x5D4C;&#x5957;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x5143;&#x7D20;
+</code></pre>
+<h2 id="&#x5F15;&#x7528;&#x548C;&#x4EE3;&#x7801;">&#x5F15;&#x7528;&#x548C;&#x4EE3;&#x7801;</h2>
+<h3 id="&#x5F15;&#x7528;">&#x5F15;&#x7528;</h3>
+<p>&#x6BB5;&#x843D;&#x5F00;&#x5934;&#x4F7F;&#x7528;<code>&gt;</code>&#x7B26;&#x53F7;, &#x540E;&#x9762;&#x8DDF;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#x52A0;&#x4E0A;&#x5185;&#x5BB9;&#x5373;&#x53EF;.</p>
+<pre class="language-"><code class="lang-markdown"><span class="token blockquote punctuation">&gt;</span> &#x8FD9;&#x91CC;&#x662F;&#x5F15;&#x7528;&#x7684;&#x5185;&#x5BB9;
+&#x5F15;&#x7528;&#x4E2D;&#x7684;&#x5D4C;&#x5957;
+<span class="token blockquote punctuation">&gt;</span> &#x5F15;&#x7528;&#x5185;&#x5BB9;
+<span class="token blockquote punctuation">&gt;&gt;</span> &#x7B2C;&#x4E8C;&#x5C42;&#x5F15;&#x7528;
+</code></pre>
+<h3 id="&#x4EE3;&#x7801;">&#x4EE3;&#x7801;</h3>
+<p>&#x5982;&#x679C;&#x53EA;&#x662F;&#x4E00;&#x53E5;&#x8BDD;&#x7684;&#x67D0;&#x4E2A;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x53EF;&#x4EE5;&#x7528;&#xFF08;`&#xFF09;&#x5305;&#x8D77;&#x6765;</p>
+<pre class="language-"><code class="lang-markdown"><span class="token code-snippet code keyword">`print`</span>
+<span class="token code-snippet code keyword">`int`</span>
+</code></pre>
+<p>&#x7528;```&#x6765;&#x5305;&#x88F9;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;(&#x4E5F;&#x53EF;&#x4EE5;&#x6307;&#x540D;&#x662F;&#x54EA;&#x79CD;&#x8BED;&#x8A00;)</p>
+<pre class="language-"><code class="lang-markdown">```java
+public class Demo{
+    public static void main(String[] args){
+        System.out.println(&quot;Hello,World!&quot;);
+    }
+}
+&#x200B;
+</code></pre>
+<pre class="language-"><code>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pre</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">height</span><span class="token punctuation">:</span>100px<span class="token punctuation">;</span><span class="token property">overflow-y</span><span class="token punctuation">:</span>auto</span><span class="token punctuation">&quot;</span></span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">color</span><span class="token punctuation">:</span>red<span class="token punctuation">;</span><span class="token property">font-size</span><span class="token punctuation">:</span>14px<span class="token punctuation">;</span><span class="token property">font-weight</span><span class="token punctuation">:</span>bold<span class="token punctuation">;</span></span><span class="token punctuation">&quot;</span></span></span><span class="token punctuation">&gt;</span></span>
+    public class Demo{
+    public static void main(String[] args){
+        System.out.println(&quot;Hello,World!&quot;);
+        }
+    }<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>pre</span><span class="token punctuation">&gt;</span></span>
+
+## &#x94FE;&#x63A5;
+
+&#x94FE;&#x63A5;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;:
+
+```markdown
+[&#x94FE;&#x63A5;&#x540D;&#x79F0;](&#x94FE;&#x63A5;&#x5730;&#x5740;)
+&#x6216;&#x8005;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>&#x94FE;&#x63A5;&#x5730;&#x5740;</span><span class="token punctuation">&gt;</span></span>
+example:
+[baidu](www.baidu.com)
+</code></pre><p>&#x94FE;&#x63A5;&#x65B9;&#x6CD5;&#x4E8C;:</p>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x6765;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x94FE;&#x63A5;&#xFF0C;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#x5728;&#x6587;&#x6863;&#x672B;&#x5C3E;&#x8FDB;&#x884C;.</p>
+<pre class="language-"><code class="lang-markdown">&#x8FD9;&#x4E2A;1&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x7F51;&#x5740;&#x53D8;&#x91CF;<span class="token url">[<span class="token content">baidu</span>][<span class="token variable">1</span>]</span>
+[1]:www.baidu.com
+</code></pre>
+<pre class="language-"><code class="lang-html">HTML&#x94FE;&#x63A5;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>&#x6307;&#x5B9A;&#x94FE;&#x63A5;&#x5730;&#x5740;<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x94FE;&#x63A5;&#x6807;&#x7B7E;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p><a href="www.baidu.com">Baidu</a></p>
+<h2 id="&#x8DF3;&#x8F6C;">&#x8DF3;&#x8F6C;</h2>
+<h3 id="&#x9875;&#x5185;&#x8DF3;&#x8F6C;">&#x9875;&#x5185;&#x8DF3;&#x8F6C;</h3>
+<ol>
+<li>&#x4F7F;&#x7528;markdown&#x8BED;&#x6CD5;, &#x8DF3;&#x8F6C;&#x5230;&#x6807;&#x9898;&#x6240;&#x5728;&#x4F4D;&#x7F6E;.</li>
+</ol>
+<pre class="language-"><code class="lang-markdown">[&#x4EFB;&#x610F;&#x6587;&#x5B57;] (#&#x6807;&#x9898;&#x540D;&#x79F0;)
+</code></pre>
+<ol>
+<li>&#x4F7F;&#x7528;HTML&#x8BED;&#x6CD5;,&#x53EF;&#x4EE5;&#x8DF3;&#x8F6C;&#x5230;&#x9875;&#x9762;&#x5185;&#x4EFB;&#x610F;&#x4F4D;&#x7F6E;</li>
+</ol>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>anchor<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#anchor<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x70B9;&#x51FB;&#x8DF3;&#x8F6C;&#x5230;anchor<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+[&#x70B9;&#x51FB;&#x8DF3;&#x8F6C;&#x5230;anchor](#anchor)
+</code></pre>
+<h2 id="&#x56FE;&#x7247;">&#x56FE;&#x7247;</h2>
+<pre class="language-"><code class="lang-markdown">markdown&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#x5982;&#x4E0B;:
+<span class="token url"><span class="token operator">!</span>[<span class="token content">alt &#x5C5E;&#x6027;&#x6587;&#x672C;</span>](<span class="token url">&#x56FE;&#x7247;&#x5730;&#x5740;</span>)</span>
+<span class="token url"><span class="token operator">!</span>[<span class="token content">alt &#x5C5E;&#x6027;&#x6587;&#x672C;</span>](<span class="token url">&#x56FE;&#x7247;&#x5730;&#x5740;</span> <span class="token string">&quot;&#x53EF;&#x9009;&#x6807;&#x9898;&quot;</span>)</span>
+</code></pre>
+<ul>
+<li>&#x5F00;&#x5934;&#x4E00;&#x4E2A;&#x611F;&#x53F9;&#x53F7;!</li>
+<li>&#x63A5;&#x7740;&#x4E00;&#x4E2A;&#x65B9;&#x62EC;&#x53F7;, &#x91CC;&#x9762;&#x653E;&#x56FE;&#x7247;&#x4EE3;&#x66FF;&#x7684;&#x6587;&#x5B57;</li>
+<li>&#x63A5;&#x7740;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x62EC;&#x53F7;,&#x91CC;&#x9762;&#x653E;&#x4E0A;&#x56FE;&#x7247;&#x7684;&#x5730;&#x5740;,&#x6700;&#x540E;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x5F15;&#x53F7;&#x5305;&#x4F4F;&#x5E76;&#x52A0;&#x4E0A;&#x9009;&#x62E9;&#x6027;&#x7684;&#x6807;&#x9898;&#x5C5E;&#x6027;&#x6587;&#x5B57;.</li>
+</ul>
+<p>markdown&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x6307;&#x5B9A;&#x56FE;&#x7247;&#x7684;&#x9AD8;&#x5EA6;,&#x5BBD;&#x5EA6;,&#x548C;&#x4F4D;&#x7F6E;,&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span><span class="token punctuation">&gt;</span></span></code>&#x6807;&#x7B7E;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>&#x5730;&#x5740;<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>50%<span class="token punctuation">&quot;</span></span><span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>50%<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre>
+<h2 id="&#x8868;&#x683C;">&#x8868;&#x683C;</h2>
+<h3 id="markdown&#x8868;&#x683C;">markdown&#x8868;&#x683C;</h3>
+<pre class="language-"><code class="lang-markdown">&#x8868;&#x683C;&#x8BED;&#x6CD5;
+|&#x8868;&#x5934;1|&#x8868;&#x5934;2|&#x8868;&#x5934;3|
+|------| :-  -: |------:|
+|&#x5DE6;&#x5BF9;&#x9F50;|&#x5C45;&#x4E2D;&#x5BF9;&#x9F50;|&#x53F3;&#x5BF9;&#x9F50;|
+</code></pre>
+<h3 id="html&#x8868;&#x683C;">HTML&#x8868;&#x683C;</h3>
+<pre style="height:300px;overflow-y:auto;" class="language-">
+<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">border</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>500<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>1000<span class="token punctuation">&quot;</span></span> <span class="token attr-name">cellspacing</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0<span class="token punctuation">&quot;</span></span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>&#x5E8F;&#x53F7;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>&#x7EF4;&#x4FEE;&#x9879;&#x76EE;&#x53CA;&#x66F4;&#x6362;&#x914D;&#x4EF6;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>&#x5355;&#x4EF7;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>&#x6570;&#x91CF;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>&#x5C0F;&#x8BA1;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>&#x5DE5;&#x65F6;&#x8D39;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>&#x5408;&#x8BA1;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>&#x6545;&#x969C;&#x539F;&#x56E0;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>5<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>6<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">rowspan</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>7<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">colspan</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">rowspan</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">rowspan</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">rowspan</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">rowspan</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">rowspan</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">colspan</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x5907;&#x4EF6;&#x8D39;&#x7528;&#x5C0F;&#x8BA1;&#xFF1A;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">colspan</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>5<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x5DE5;&#x65F6;&#x8D39;&#x7528;&#x5C0F;&#x8BA1;&#xFF1A;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>&#x5408;&#x8BA1;&#xFF1A;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
+</code>
+</pre>
+
+
+
+<table border="2px">
+    <caption style="text-align:center;">HTML&#x8868;&#x683C;&#x6807;&#x7B7E;</caption>
+    <tr>
+        <th style="text-align:center;">&#x6807;&#x7B7E;</th>
+        <th style="text-align:center;">&#x63CF;&#x8FF0;</th>
+        <th style="text-align:center;">&#x6807;&#x7B7E;</th>
+        <th style="text-align:center;">&#x63CF;&#x8FF0;</th>
+    </tr>
+    <tr>
+        <td style="text-align:center;">table</td>
+        <td style="text-align:center;">&#x5B9A;&#x4E49;&#x8868;&#x683C;</td>
+        <td style="text-align:center;">th</td>
+        <td style="text-align:center;">&#x5B9A;&#x4E49;&#x8868;&#x683C;&#x7684;&#x8868;&#x5934;</td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">tr</td>
+        <td style="text-align:center;">&#x5B9A;&#x4E49;&#x8868;&#x683C;&#x7684;&#x884C;</td>
+        <td style="text-align:center;">td</td>
+        <td style="text-align:center;">&#x5B9A;&#x4E49;&#x8868;&#x683C;&#x7684;&#x5355;&#x5143;</td>
+    </tr>
+        <tr>
+        <td style="text-align:center;">caption</td>
+        <td style="text-align:center;">&#x5B9A;&#x4E49;&#x8868;&#x683C;&#x6807;&#x9898;</td>
+        <td style="text-align:center;">colgroup</td>
+        <td style="text-align:center;">&#x5B9A;&#x4E49;&#x8868;&#x683C;&#x5217;&#x7684;&#x7EC4;</td>
+    </tr>
+    
+        <td style="text-align:center;">col</td>
+        <td style="text-align:center;">&#x5B9A;&#x4E49;&#x8868;&#x683C;&#x5217;&#x7684;&#x5C5E;&#x6027;</td>
+        <td style="text-align:center;">thead</td>
+        <td style="text-align:center;">&#x5B9A;&#x4E49;&#x8868;&#x683C;&#x9875;&#x7709;</td>
+    
+    <tr>
+        <td style="text-align:center;">tbody</td>
+        <td style="text-align:center;">&#x5B9A;&#x4E49;&#x8868;&#x683C;&#x4E3B;&#x4F53;</td>
+        <td style="text-align:center;">tfoot</td>
+        <td style="text-align:center;">&#x5B9A;&#x4E49;&#x8868;&#x683C;&#x9875;&#x811A;</td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">rowspan=&quot;&quot;</td>
+        <td style="text-align:center;">&#x8DE8;&#x884C;&#x5355;&#x5143;&#x683C;&#x5B9A;&#x4E49;</td>
+        <td style="text-align:center;">colspan=&quot;&quot;</td>
+        <td style="text-align:center;">&#x8DE8;&#x5217;&#x5355;&#x5143;&#x683C;&#x5B9A;&#x4E49;</td>
+    </tr>
+</table>
+
+
+<h2 id="markdown&#x9AD8;&#x7EA7;&#x6280;&#x5DE7;">markdown&#x9AD8;&#x7EA7;&#x6280;&#x5DE7;</h2>
+<h3 id="&#x652F;&#x6301;html&#x5143;&#x7D20;">&#x652F;&#x6301;HTML&#x5143;&#x7D20;</h3>
+<p>&#x4E0D;&#x5728;markdown&#x6DB5;&#x76D6;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6807;&#x7B7E;,&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x6587;&#x6863;&#x91CC;&#x9762;&#x7528;HTLM&#x64B0;&#x5199;.</p>
+<p>example:</p>
+<pre class="language-"><code class="lang-html">&#x4F7F;&#x7528;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>kbd</span><span class="token punctuation">&gt;</span></span>Ctrl<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>kbd</span><span class="token punctuation">&gt;</span></span>+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>kbd</span><span class="token punctuation">&gt;</span></span>Alt<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>kbd</span><span class="token punctuation">&gt;</span></span>+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>kbd</span><span class="token punctuation">&gt;</span></span>del<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>kbd</span><span class="token punctuation">&gt;</span></span>&#x91CD;&#x542F;&#x7535;&#x8111;
+</code></pre>
+<p>&#x4F7F;&#x7528;<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>del</kbd>&#x91CD;&#x542F;&#x7535;&#x8111;</p>
+<h3 id="&#x8F6C;&#x4E49;">&#x8F6C;&#x4E49;</h3>
+<pre class="language-"><code class="lang-markdown"><span class="token bold"><span class="token punctuation">**</span><span class="token content">&#x7C97;&#x4F53;</span><span class="token punctuation">**</span></span>
+\*\*&#x7C97;&#x4F53;\*\*
+</code></pre>
+<p>**&#x7C97;&#x4F53;**</p>
+<h3 id="&#x6570;&#x5B66;&#x516C;&#x5F0F;">&#x6570;&#x5B66;&#x516C;&#x5F0F;</h3>
+<p>&#x5F53;&#x9700;&#x8981;&#x5728;&#x7F16;&#x8F91;&#x5668;&#x4E2D;&#x63D2;&#x5165;&#x6570;&#x5B66;&#x516C;&#x5F0F;&#x65F6;,&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>$$</code>&#x5305;&#x88F9;TeX&#x6216;LaTeX&#x683C;&#x5F0F;&#x7684;&#x6570;&#x5B66;&#x516C;&#x5F0F;&#x6765;&#x5B9E;&#x73B0;</p>
+<pre class="language-"><code class="lang-mathematica">$$
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} 
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\
+\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \\
+\end{vmatrix}
+${$tep1}{\style{visibility:hidden}{(x+1)(x+1)}}
+$$
+</code></pre>
+<p>$$
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} 
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \
+\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \
+\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \
+\end{vmatrix}
+${$tep1}{\style{visibility:hidden}{(x+1)(x+1)}}</p>
+<p>$$</p>
+<p><a href="https://blog.csdn.net/qq_18150255/article/details/88040858" target="_blank">&#x6570;&#x5B66;&#x516C;&#x5F0F;&#x8868;&#x8FBE;&#x8BE6;&#x89C1;</a></p>
+<h2 id="&#x6D41;&#x7A0B;&#x56FE;">&#x6D41;&#x7A0B;&#x56FE;</h2>
+<h3 id="&#x6A2A;&#x5411;&#x6D41;&#x7A0B;&#x56FE;&#x6E90;&#x7801;&#x683C;&#x5F0F;">&#x6A2A;&#x5411;&#x6D41;&#x7A0B;&#x56FE;&#x6E90;&#x7801;&#x683C;&#x5F0F;</h3>
+<pre class="language-"><code class="lang-markdown">```mermaid
+graph LR
+A[&#x65B9;&#x5F62;] --&gt;B(&#x5706;&#x89D2;)
+B --&gt; C{&#x6761;&#x4EF6;A}
+C --&gt; |a=1| D[&#x7ED3;&#x679C;1]
+C --&gt; |a=2| E[&#x7ED3;&#x679C;2]
+F(&#x6A2A;&#x5411;&#x6D41;&#x7A0B;&#x56FE;)
+&#x200B;
+</code></pre>
+<pre class="language-"><code>
+
+
+```mermaid
+graph LR
+A[&#x65B9;&#x5F62;] --&gt;B(&#x5706;&#x89D2;)
+B --&gt; C{&#x6761;&#x4EF6;A}
+C --&gt; |a=1| D[&#x7ED3;&#x679C;1]
+C --&gt; |a=2| E[&#x7ED3;&#x679C;2]
+F(&#x6A2A;&#x5411;&#x6D41;&#x7A0B;&#x56FE;)
+</code></pre><h3 id="&#x7AD6;&#x5411;&#x6D41;&#x7A0B;&#x56FE;&#x6E90;&#x7801;&#x683C;&#x5F0F;">&#x7AD6;&#x5411;&#x6D41;&#x7A0B;&#x56FE;&#x6E90;&#x7801;&#x683C;&#x5F0F;</h3>
+<pre class="language-"><code class="lang-markdown">```mermaid
+graph LR
+A[&#x65B9;&#x5F62;] --&gt;B(&#x5706;&#x89D2;)
+B --&gt; C{&#x6761;&#x4EF6;A}
+C --&gt; |a=1| D[&#x7ED3;&#x679C;1]
+C --&gt; |a=2| E[&#x7ED3;&#x679C;2]
+F(&#x6A2A;&#x5411;&#x6D41;&#x7A0B;&#x56FE;)
+&#x200B;
+</code></pre>
+<pre class="language-"><code>
+```mermaid
+graph TD
+A[&#x65B9;&#x5F62;] --&gt;B(&#x5706;&#x89D2;)
+B --&gt; C{&#x6761;&#x4EF6;A}
+C --&gt; |a=1| D[&#x7ED3;&#x679C;1]
+C --&gt; |a=2| E[&#x7ED3;&#x679C;2]
+F(&#x6A2A;&#x5411;&#x6D41;&#x7A0B;&#x56FE;)
+</code></pre><h3 id="&#x6807;&#x51C6;&#x6D41;&#x7A0B;&#x56FE;&#x6E90;&#x7801;&#x683C;&#x5F0F;">&#x6807;&#x51C6;&#x6D41;&#x7A0B;&#x56FE;&#x6E90;&#x7801;&#x683C;&#x5F0F;</h3>
+<pre class="language-"><code class="lang-markdown">```flow
+st=&gt;start: &#x5F00;&#x59CB;&#x6846;
+op=&gt;operation: &#x5904;&#x7406;&#x6846;
+cond=&gt;condition: &#x5224;&#x65AD;&#x6846;
+sub=&gt;subroutine: &#x5B50;&#x6D41;&#x7A0B;
+io=&gt;inputoutput: &#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6846;
+e=&gt;end: &#x7ED3;&#x675F;&#x6846;
+st-&gt;op-&gt;cond
+cond(yes)-&gt;io-&gt;e
+cond(no)-&gt;sub(right)-&gt;op
+&#x200B;
+</code></pre>
+<pre class="language-"><code>
+```flow
+st=&gt;start: &#x5F00;&#x59CB;&#x6846;
+op=&gt;operation: &#x5904;&#x7406;&#x6846;
+cond=&gt;condition: &#x5224;&#x65AD;&#x6846;
+sub=&gt;subroutine: &#x5B50;&#x6D41;&#x7A0B;
+io=&gt;inputoutput: &#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6846;
+e=&gt;end: &#x7ED3;&#x675F;&#x6846;
+st-&gt;op-&gt;cond
+cond(yes)-&gt;io-&gt;e
+cond(no)-&gt;sub(right)-&gt;op
+</code></pre><h3 id="&#x6807;&#x51C6;&#x6D41;&#x7A0B;&#x56FE;&#x6E90;&#x7801;&#x683C;&#x5F0F;&#x6A2A;&#x5411;">&#x6807;&#x51C6;&#x6D41;&#x7A0B;&#x56FE;&#x6E90;&#x7801;&#x683C;&#x5F0F;&#x6A2A;&#x5411;</h3>
+<pre class="language-"><code class="lang-markdown">```flow
+st=&gt;start: &#x5F00;&#x59CB;&#x6846;
+op=&gt;operation: &#x5904;&#x7406;&#x6846;
+cond=&gt;condition: &#x5224;&#x65AD;&#x6846;
+sub=&gt;subroutine: &#x5B50;&#x6D41;&#x7A0B;
+io=&gt;inputoutput: &#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6846;
+e=&gt;end: &#x7ED3;&#x675F;&#x6846;
+st(right)-&gt;op(right)-&gt;cond
+cond(yes)-&gt;io(bottom)-&gt;e
+cond(no)-&gt;sub(right)-&gt;op
+&#x200B;
+</code></pre>
+<pre class="language-"><code>
+```flow
+st=&gt;start: &#x5F00;&#x59CB;&#x6846;
+op=&gt;operation: &#x5904;&#x7406;&#x6846;
+cond=&gt;condition: &#x5224;&#x65AD;&#x6846;
+sub=&gt;subroutine: &#x5B50;&#x6D41;&#x7A0B;
+io=&gt;inputoutput: &#x8F93;&#x5165;&#x8F93;&#x51FA;&#x6846;
+e=&gt;end: &#x7ED3;&#x675F;&#x6846;
+st(right)-&gt;op(right)-&gt;cond
+cond(yes)-&gt;io(bottom)-&gt;e
+cond(no)-&gt;sub(right)-&gt;op
+</code></pre><h3 id="uml&#x65F6;&#x5E8F;&#x56FE;&#x6E90;&#x7801;&#x6837;&#x5F0F;">UML&#x65F6;&#x5E8F;&#x56FE;&#x6E90;&#x7801;&#x6837;&#x5F0F;</h3>
+<pre class="language-"><code class="lang-markdown">```sequence
+&#x5BF9;&#x8C61;A-&gt;&#x5BF9;&#x8C61;B:&#x5BF9;&#x8C61;B&#x8FD8;&#x597D;&#x5417;?(&#x8BF7;&#x6C42;)
+Note right of &#x5BF9;&#x8C61;B:&#x5BF9;&#x8C61;B&#x7684;&#x63CF;&#x8FF0;
+Note left of &#x5BF9;&#x8C61;A:&#x5BF9;&#x8C61;A&#x7684;&#x63CF;&#x8FF0;
+&#x5BF9;&#x8C61;B-&gt;&#x5BF9;&#x8C61;A:&#x6211;&#x5F88;&#x597D;(&#x54CD;&#x5E94;)
+&#x5BF9;&#x8C61;A-&gt;&#x5BF9;&#x8C61;B:&#x55EF;
+&#x200B;
+</code></pre>
+<pre class="language-"><code>
+
+
+```sequence
+&#x5BF9;&#x8C61;A-&gt;&#x5BF9;&#x8C61;B:&#x5BF9;&#x8C61;B&#x8FD8;&#x597D;&#x5417;?(&#x8BF7;&#x6C42;)
+Note right of &#x5BF9;&#x8C61;B:&#x5BF9;&#x8C61;B&#x7684;&#x63CF;&#x8FF0;
+Note left of &#x5BF9;&#x8C61;A:&#x5BF9;&#x8C61;A&#x7684;&#x63CF;&#x8FF0;
+&#x5BF9;&#x8C61;B-&gt;&#x5BF9;&#x8C61;A:&#x6211;&#x5F88;&#x597D;(&#x54CD;&#x5E94;)
+&#x5BF9;&#x8C61;A-&gt;&#x5BF9;&#x8C61;B:&#x55EF;
+</code></pre><h3 id="uml&#x65F6;&#x5E8F;&#x56FE;&#x6E90;&#x7801;&#x590D;&#x6742;&#x6837;&#x4F8B;">UML&#x65F6;&#x5E8F;&#x56FE;&#x6E90;&#x7801;&#x590D;&#x6742;&#x6837;&#x4F8B;</h3>
+<pre class="language-"><code class="lang-markdown">```sequence
+Title: &#x6807;&#x9898;&#xFF1A;&#x590D;&#x6742;&#x4F7F;&#x7528;
+&#x5BF9;&#x8C61;A-&gt;&#x5BF9;&#x8C61;B: &#x5BF9;&#x8C61;B&#x4F60;&#x597D;&#x5417;?&#xFF08;&#x8BF7;&#x6C42;&#xFF09;
+Note right of &#x5BF9;&#x8C61;B: &#x5BF9;&#x8C61;B&#x7684;&#x63CF;&#x8FF0;
+Note left of &#x5BF9;&#x8C61;A: &#x5BF9;&#x8C61;A&#x7684;&#x63CF;&#x8FF0;(&#x63D0;&#x793A;)
+&#x5BF9;&#x8C61;B--&gt;&#x5BF9;&#x8C61;A: &#x6211;&#x5F88;&#x597D;(&#x54CD;&#x5E94;)
+&#x5BF9;&#x8C61;B-&gt;&#x5C0F;&#x4E09;: &#x4F60;&#x597D;&#x5417;
+&#x5C0F;&#x4E09;--&gt;&gt;&#x5BF9;&#x8C61;A: &#x5BF9;&#x8C61;B&#x627E;&#x6211;&#x4E86;
+&#x5BF9;&#x8C61;A-&gt;&#x5BF9;&#x8C61;B: &#x4F60;&#x771F;&#x7684;&#x597D;&#x5417;&#xFF1F;
+Note over &#x5C0F;&#x4E09;,&#x5BF9;&#x8C61;B: &#x6211;&#x4EEC;&#x662F;&#x670B;&#x53CB;
+participant C
+Note right of C: &#x6CA1;&#x4EBA;&#x966A;&#x6211;&#x73A9;
+&#x200B;
+</code></pre>
+<pre class="language-"><code>
+```sequence
+Title: &#x6807;&#x9898;&#xFF1A;&#x590D;&#x6742;&#x4F7F;&#x7528;
+&#x5BF9;&#x8C61;A-&gt;&#x5BF9;&#x8C61;B: &#x5BF9;&#x8C61;B&#x4F60;&#x597D;&#x5417;?&#xFF08;&#x8BF7;&#x6C42;&#xFF09;
+Note right of &#x5BF9;&#x8C61;B: &#x5BF9;&#x8C61;B&#x7684;&#x63CF;&#x8FF0;
+Note left of &#x5BF9;&#x8C61;A: &#x5BF9;&#x8C61;A&#x7684;&#x63CF;&#x8FF0;(&#x63D0;&#x793A;)
+&#x5BF9;&#x8C61;B--&gt;&#x5BF9;&#x8C61;A: &#x6211;&#x5F88;&#x597D;(&#x54CD;&#x5E94;)
+&#x5BF9;&#x8C61;B-&gt;&#x5C0F;&#x4E09;: &#x4F60;&#x597D;&#x5417;
+&#x5C0F;&#x4E09;--&gt;&gt;&#x5BF9;&#x8C61;A: &#x5BF9;&#x8C61;B&#x627E;&#x6211;&#x4E86;
+&#x5BF9;&#x8C61;A-&gt;&#x5BF9;&#x8C61;B: &#x4F60;&#x771F;&#x7684;&#x597D;&#x5417;&#xFF1F;
+Note over &#x5C0F;&#x4E09;,&#x5BF9;&#x8C61;B: &#x6211;&#x4EEC;&#x662F;&#x670B;&#x53CB;
+participant C
+Note right of C: &#x6CA1;&#x4EBA;&#x966A;&#x6211;&#x73A9;
+</code></pre><h3 id="uml&#x6807;&#x51C6;&#x65F6;&#x5E8F;&#x56FE;&#x6837;&#x4F8B;">UML&#x6807;&#x51C6;&#x65F6;&#x5E8F;&#x56FE;&#x6837;&#x4F8B;</h3>
+<pre class="language-"><code class="lang-markdown">```mermaid
+%% &#x65F6;&#x5E8F;&#x56FE;&#x4F8B;&#x5B50;,-&gt; &#x76F4;&#x7EBF;&#xFF0C;--&gt;&#x865A;&#x7EBF;&#xFF0C;-&gt;&gt;&#x5B9E;&#x7EBF;&#x7BAD;&#x5934;
+  sequenceDiagram
+    participant &#x5F20;&#x4E09;
+    participant &#x674E;&#x56DB;
+    &#x5F20;&#x4E09;-&gt;&#x738B;&#x4E94;: &#x738B;&#x4E94;&#x4F60;&#x597D;&#x5417;&#xFF1F;
+    loop &#x5065;&#x5EB7;&#x68C0;&#x67E5;
+        &#x738B;&#x4E94;-&gt;&#x738B;&#x4E94;: &#x4E0E;&#x75BE;&#x75C5;&#x6218;&#x6597;
+    end
+    Note right of &#x738B;&#x4E94;: &#x5408;&#x7406; &#x98DF;&#x7269; <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span>&#x770B;&#x533B;&#x751F;...
+    &#x674E;&#x56DB;--&gt;&gt;&#x5F20;&#x4E09;: &#x5F88;&#x597D;!
+    &#x738B;&#x4E94;-&gt;&#x674E;&#x56DB;: &#x4F60;&#x600E;&#x4E48;&#x6837;?
+    &#x674E;&#x56DB;--&gt;&#x738B;&#x4E94;: &#x5F88;&#x597D;!
+&#x200B;
+</code></pre>
+<pre class="language-"><code>
+```mermaid
+%% &#x65F6;&#x5E8F;&#x56FE;&#x4F8B;&#x5B50;,-&gt; &#x76F4;&#x7EBF;&#xFF0C;--&gt;&#x865A;&#x7EBF;&#xFF0C;-&gt;&gt;&#x5B9E;&#x7EBF;&#x7BAD;&#x5934;
+  sequenceDiagram
+    participant &#x5F20;&#x4E09;
+    participant &#x674E;&#x56DB;
+    &#x5F20;&#x4E09;-&gt;&#x738B;&#x4E94;: &#x738B;&#x4E94;&#x4F60;&#x597D;&#x5417;&#xFF1F;
+    loop &#x5065;&#x5EB7;&#x68C0;&#x67E5;
+        &#x738B;&#x4E94;-&gt;&#x738B;&#x4E94;: &#x4E0E;&#x75BE;&#x75C5;&#x6218;&#x6597;
+    end
+    Note right of &#x738B;&#x4E94;: &#x5408;&#x7406; &#x98DF;&#x7269; <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span>&#x770B;&#x533B;&#x751F;...
+    &#x674E;&#x56DB;--&gt;&gt;&#x5F20;&#x4E09;: &#x5F88;&#x597D;!
+    &#x738B;&#x4E94;-&gt;&#x674E;&#x56DB;: &#x4F60;&#x600E;&#x4E48;&#x6837;?
+    &#x674E;&#x56DB;--&gt;&#x738B;&#x4E94;: &#x5F88;&#x597D;!
+</code></pre><h3 id="&#x7518;&#x7279;&#x56FE;&#x6848;&#x4F8B;">&#x7518;&#x7279;&#x56FE;&#x6848;&#x4F8B;</h3>
+<pre class="language-"><code class="lang-markdown">```mermaid
+%% &#x8BED;&#x6CD5;&#x793A;&#x4F8B;
+        gantt
+        dateFormat  YYYY-MM-DD
+        title &#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x7518;&#x7279;&#x56FE;
+        section &#x8BBE;&#x8BA1;
+        &#x9700;&#x6C42;                      :done,    des1, 2014-01-06,2014-01-08
+        &#x539F;&#x578B;                      :active,  des2, 2014-01-09, 3d
+        UI&#x8BBE;&#x8BA1;                     :         des3, after des2, 5d
+    &#x672A;&#x6765;&#x4EFB;&#x52A1;                     :         des4, after des3, 5d
+        section &#x5F00;&#x53D1;
+        &#x5B66;&#x4E60;&#x51C6;&#x5907;&#x7406;&#x89E3;&#x9700;&#x6C42;                      :crit, done, 2014-01-06,24h
+        &#x8BBE;&#x8BA1;&#x6846;&#x67B6;                             :crit, done, after des2, 2d
+        &#x5F00;&#x53D1;                                 :crit, active, 3d
+        &#x672A;&#x6765;&#x4EFB;&#x52A1;                              :crit, 5d
+        &#x800D;                                   :2d
+        section &#x6D4B;&#x8BD5;
+        &#x529F;&#x80FD;&#x6D4B;&#x8BD5;                              :active, a1, after des3, 3d
+        &#x538B;&#x529B;&#x6D4B;&#x8BD5;                               :after a1  , 20h
+        &#x6D4B;&#x8BD5;&#x62A5;&#x544A;                               : 48h
+&#x200B;
+</code></pre>
+<pre class="language-"><code>
+```mermaid
+%% &#x8BED;&#x6CD5;&#x793A;&#x4F8B;
+        gantt
+        dateFormat  YYYY-MM-DD
+        title &#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x7518;&#x7279;&#x56FE;
+        section &#x8BBE;&#x8BA1;
+        &#x9700;&#x6C42;                      :done,    des1, 2014-01-06,2014-01-08
+        &#x539F;&#x578B;                      :active,  des2, 2014-01-09, 3d
+        UI&#x8BBE;&#x8BA1;                     :         des3, after des2, 5d
+    &#x672A;&#x6765;&#x4EFB;&#x52A1;                     :         des4, after des3, 5d
+        section &#x5F00;&#x53D1;
+        &#x5B66;&#x4E60;&#x51C6;&#x5907;&#x7406;&#x89E3;&#x9700;&#x6C42;                      :crit, done, 2014-01-06,24h
+        &#x8BBE;&#x8BA1;&#x6846;&#x67B6;                             :crit, done, after des2, 2d
+        &#x5F00;&#x53D1;                                 :crit, active, 3d
+        &#x672A;&#x6765;&#x4EFB;&#x52A1;                              :crit, 5d
+        &#x800D;                                   :2d
+        section &#x6D4B;&#x8BD5;
+        &#x529F;&#x80FD;&#x6D4B;&#x8BD5;                              :active, a1, after des3, 3d
+        &#x538B;&#x529B;&#x6D4B;&#x8BD5;                               :after a1  , 20h
+        &#x6D4B;&#x8BD5;&#x62A5;&#x544A;                               : 48h
+</code></pre><p><a href="https://kuang.netlify.app/markdown/markdown&#x8BED;&#x6CD5;.html" target="_blank">markdown &#x8BED;&#x6CD5;&#x57FA;&#x7840;</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Markdown Syntax Summary","level":"1.2","depth":1,"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","back-to-top-button","code","copy-code-button","advanced-emoji","splitter","prism","-highlight","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"livereload":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"爱潜水的鱼","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"我的笔记","language":"zh-hans","link":{"sidebar":{"HOME":"https://www.baidu.com"}},"gitbook":"*","description":"学习是一点一点的积累"},"file":{"path":"Markdown_Syntax_Summary.md","mtime":"2021-08-30T15:10:16.971Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-07T13:48:16.358Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
