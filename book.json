@@ -11,8 +11,8 @@
    "plugins": [
        "-lunr", "-search", "search-pro",
        "chapter-fold",
+       "expandable-chapters",
        "back-to-top-button",
-       "expandable-chapters-small",
        "code",
        "copy-code-button",
        "advanced-emoji",
@@ -22,8 +22,9 @@
    ],
    "pluginsConfig": {
     "code": {
-    "copyButtons": true
     },
+    "chapter-fold":{},
+    "expandable-chapters":{},
     "prism": {
         "css": [
             "prismjs/themes/prism-tomorrow.css"
