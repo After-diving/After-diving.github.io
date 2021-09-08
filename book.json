@@ -21,8 +21,7 @@
        "-highlight"
    ],
    "pluginsConfig": {
-    "code": {
-    },
+    "code": {},
     "chapter-fold":{},
     "expandable-chapters":{},
     "prism": {

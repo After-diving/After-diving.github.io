@@ -120,13 +120,13 @@ p {
 ## 文本背景色
 
 为了让页面更美观，除了设置整个页面的背景色以及文字颜色外，你还可以单独设置文字的背景色，即在文字的父元素上添加`background-color`属性。在本挑战里我们将使用`rgba()`颜色，而不是之前学到的`hex`编码或者`rgb()`颜色。
-
+```css
 <pre style="background-color:rgba(45,45,45,0.2);pading:10px;box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">rgba 代表：
  r = red 红色
  g = green 绿色
  b = blue 蓝色
  a = alpha 透明度</pre>
-
+```
 RGB 值可以在 0 到 255 之间。alpha 值可以在 0 到 1 之间，其中 0 代表完全透明，1 代表完全不透明。`rgba()`非常棒，因为你可以设置颜色的透明度，这意味着你可以做出一些很漂亮的半透明效果。
 
 ## box-shadow 元素阴影
