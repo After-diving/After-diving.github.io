@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>markdown syntax</title>
+    <url>/2025/03/30/markdown-syntax/</url>
+    <content><![CDATA[<h1 id="markdown-syntax">Markdown Syntax</h1>
+<h2 id="标题">标题</h2>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="section"># //一级标题, 记得#后面有空格</span></span><br><span class="line"><span class="section">## //二级标题</span></span><br><span class="line"><span class="section">### //三级标题</span></span><br><span class="line">......最多六级标题</span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>标题1<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>标题2<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 最多到&lt;h6&gt; --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>段落<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="字体">字体</h2>
+<ol type="1">
+<li>markdown语法</li>
+</ol>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="emphasis">*斜体*</span>          <span class="emphasis">_斜体_</span> </span><br><span class="line"><span class="strong">**粗体**</span>       <span class="strong">__粗体__</span></span><br><span class="line"><span class="strong">**<span class="emphasis">*粗斜体*</span>**</span>   <span class="strong">__<span class="emphasis">_粗斜体_</span>__</span></span><br></pre></td></tr></tbody></table></figure>
+
+<ol start="2" type="1">
+<li>HTLM语法</li>
+</ol>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">b</span>&gt;</span>粗体<span class="tag">&lt;/<span class="name">b</span>&gt;</span>  <span class="tag">&lt;<span class="name">i</span>&gt;</span>斜体<span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="tag">&lt;<span class="name">em</span>&gt;</span>着重文字<span class="tag">&lt;/<span class="name">em</span>&gt;</span> <span class="tag">&lt;<span class="name">small</span>&gt;</span>小号字<span class="tag">&lt;/<span class="name">small</span>&gt;</span> <span class="tag">&lt;<span class="name">strong</span>&gt;</span>加重语气<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">sub</span>&gt;</span>下标字<span class="tag">&lt;/<span class="name">sub</span>&gt;</span> <span class="tag">&lt;<span class="name">sup</span>&gt;</span>上标字<span class="tag">&lt;/<span class="name">sup</span>&gt;</span> <span class="tag">&lt;<span class="name">ins</span>&gt;</span>插入字<span class="tag">&lt;/<span class="name">ins</span>&gt;</span> <span class="tag">&lt;<span class="name">del</span>&gt;</span>删除字<span class="tag">&lt;/<span class="name">del</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">code</span>&gt;</span>一段电脑代码 print("hello world")<span class="tag">&lt;/<span class="name">code</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mark</span>&gt;</span>标记语法高亮<span class="tag">&lt;/<span class="name">mark</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p><b>粗体</b> <i>斜体</i> <em>着重文字</em> <small>小号字</small>
+<strong>加重语气</strong> <sub>下标字</sub> <sup>上标字</sup>
+<ins>插入字</ins> <del>删除字</del></p>
+<p><code>一段电脑代码 print(“hello world”)</code></p>
+<p><mark>标记语法高亮</mark></p>
+<h3 id="css渲染">css渲染</h3>
+<blockquote>
+<p>css可以通过以下方式添加到HTML中</p>
+<ul>
+<li>内联方式: 在HTML元素中使用<code>style</code>属性</li>
+<li>内部样式表: 在HTML文档头部<code>&lt;head&gt;</code>区域使用
+<code>&lt;style&gt;</code>元素来包含css</li>
+<li>外部引用: 使用外部css文件</li>
+</ul>
+</blockquote>
+<h4 id="内联样式">内联样式</h4>
+<p>当特殊样式需要运用到个别元素时,就可以使用内联样式</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">"color:blue;margin-left:20px;"</span>&gt;</span>这是一个段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p style="color:blue;margin-left:20px;">这是一个段落。</p>
+<table border="2px">
+    <caption style="text-align:center;">style 属性</caption>
+    <tbody><tr>
+        <th style="text-align:center;">属性</th>
+        <th style="text-align:center;">参数</th>
+        <th style="text-align:center;">属性</th>
+        <th style="text-align:center;">参数</th>
+    </tr>
+    <tr>
+        <td style="text-align:center;">color</td>
+        <td style="text-align:center;">red,blue,yellow...</td>
+        <td style="text-align:center;">margin-left</td>
+        <td style="text-align:center;">20px(左空两格)</td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">font-family</td>
+        <td style="text-align:center;">字体样式...</td>
+        <td style="text-align:center;">font-size</td>
+        <td style="text-align:center;">字体大小定义(单位px)...</td>
+    </tr>
+        <tr>
+        <td style="text-align:center;">text-align</td>
+        <td style="text-align:center;">center,left,right</td>
+        <td style="text-align:center;">background-color</td>
+        <td style="text-align:center;">red,green,blue...</td>
+    </tr>
+</tbody></table>
+
+<h4 id="内部样式表">内部样式表</h4>
+<p>当单个文件需要特别样式时,可以使用内部样式表,你可以在<code>&lt;head&gt;</code>部分通过<code>&lt;style&gt;</code>标签定义内部样式表</p>
+<figure class="highlight css"><table><tbody><tr><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">&lt;style type="<span class="selector-tag">text</span>/css"&gt;</span><br><span class="line"><span class="selector-tag">body</span> {<span class="attribute">background-color</span>:yellow;}</span><br><span class="line"><span class="selector-tag">p</span> {<span class="attribute">color</span>:blue;}</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="外部样式表">外部样式表</h4>
+<p>当样式需要被应用到很多页面的时候，外部样式表将是理想的选择。使用外部样式表，你就可以通过更改一个文件来改变整个站点的外观。</p>
+<figure class="highlight css"><table><tbody><tr><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">&lt;link rel="stylesheet" type="<span class="selector-tag">text</span>/css" href="mystyle<span class="selector-class">.css</span>"&gt;</span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="线">线</h2>
+<h3 id="分割线">分割线</h3>
+<p>在一行中用三个以上的星号、减号、底线来建立一个分割线，行内不能有其他东西，也可以三个符合中间插入空格，都能建立分割线。</p>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="strong">***</span></span><br><span class="line"><span class="strong">___</span></span><br><span class="line"><span class="strong">---</span></span><br><span class="line"><span class="strong"><span class="language-xml"><span class="tag">&lt;<span class="name">hr</span>&gt;</span></span></span></span><br></pre></td></tr></tbody></table></figure>
+
+<hr>
+<hr>
+<hr>
+<hr>
+
+<h3 id="删除线">删除线</h3>
+<p>只需在文字两端加上两个<code>~~</code>号就可以了</p>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line">~~删除线~~</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="下划线">下划线</h3>
+<p>下划线可以通过HTLM的<code>&lt;u&gt;</code>标签来实现</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">&lt;u&gt;下划线文本&lt;/u&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p><u>下划线文本</u></p>
+<h2 id="脚注">脚注</h2>
+<p>脚注是对文本的补充说明.</p>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line">[^要注明的文本]</span><br><span class="line">example</span><br><span class="line"></span><br><span class="line">[^Markdown]是一种语法.</span><br><span class="line"></span><br><span class="line">[<span class="symbol">^Markdown</span>]:<span class="link">文本编辑语言</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>是一种语法.</p>
+<h2 id="列表">列表</h2>
+<h3 id="无序列表">无序列表</h3>
+<p>使用星号(*), 加号(+), 减号(-). 作为列表标记,
+这些标记后面要添加一个空格,然后填写内容.</p>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="bullet">*</span> 第一项</span><br><span class="line"><span class="bullet">*</span> 第二项</span><br><span class="line"><span class="bullet">*</span> 第三项</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="有序列表">有序列表</h3>
+<p>使用数字加上(.)作为列表标记,后面跟空格和填写内容.</p>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> 第一项</span><br><span class="line"><span class="bullet">2.</span> 第二项</span><br><span class="line"><span class="bullet">3.</span> 第三项</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="自定义列表">自定义列表</h3>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dt</span>&gt;</span>Coffee<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dd</span>&gt;</span>- black hot drink<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dt</span>&gt;</span>Milk<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dd</span>&gt;</span>- white cold drink<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<dl>
+<dt>Coffee</dt>
+<dd>- black hot drink</dd>
+<dt>Milk</dt>
+<dd>- white cold drink</dd>
+</dl>
+
+<h3 id="列表嵌套">列表嵌套</h3>
+<p>只需要在子列表中的选项前面加四个空格即可.</p>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> 第一项：</span><br><span class="line"><span class="bullet">    -</span> 第一项嵌套的第一个元素</span><br><span class="line"><span class="bullet">    -</span> 第一项嵌套的第二个元素</span><br><span class="line"><span class="bullet">2.</span> 第二项：</span><br><span class="line"><span class="bullet">    -</span> 第二项嵌套的第一个元素</span><br><span class="line"><span class="bullet">    -</span> 第二项嵌套的第二个元素</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="引用和代码">引用和代码</h2>
+<h3 id="引用">引用</h3>
+<p>段落开头使用<code>&gt;</code>符号, 后面跟一个空格加上内容即可.</p>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="quote">&gt; 这里是引用的内容</span></span><br><span class="line">引用中的嵌套</span><br><span class="line"><span class="quote">&gt; 引用内容</span></span><br><span class="line">&gt;&gt; 第二层引用</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="代码">代码</h3>
+<p>如果只是一句话的某个代码片段可以用（`）包起来</p>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="code">`print`</span></span><br><span class="line"><span class="code">`int`</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>用```来包裹一段代码(也可以指名是哪种语言)</p>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="code">```java</span></span><br><span class="line"><span class="code">public class Demo{</span></span><br><span class="line"><span class="code">	public static void main(String[] args){</span></span><br><span class="line"><span class="code">		System.out.println("Hello,World!");</span></span><br><span class="line"><span class="code">	}</span></span><br><span class="line"><span class="code">}</span></span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;pre style="height:100px;overflow-y:auto"&gt;&lt;code style="color:red;font-size:14px;font-weight:bold;"&gt;</span><br><span class="line">    public class Demo{</span><br><span class="line">	public static void main(String[] args){</span><br><span class="line">		System.out.println("Hello,World!");</span><br><span class="line">		}</span><br><span class="line">	}&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">## 链接</span><br><span class="line"></span><br><span class="line">链接使用方法如下:</span><br><span class="line"></span><br><span class="line">```markdown</span><br><span class="line">[链接名称](链接地址)</span><br><span class="line">或者</span><br><span class="line">&lt;链接地址&gt;</span><br><span class="line">example:</span><br><span class="line">[baidu](www.baidu.com)</span><br></pre></td></tr></tbody></table></figure>
+
+<p>链接方法二:</p>
+<p>可以通过一个变量来设置一个链接，变量赋值在文档末尾进行.</p>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line">这个1作为一个网址变量[<span class="string">baidu</span>][<span class="symbol">1</span>]</span><br><span class="line">[<span class="symbol">1</span>]:<span class="link">www.baidu.com</span></span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">HTML链接</span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"指定链接地址"</span>&gt;</span>链接标签<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p><a href="www.baidu.com">Baidu</a></p>
+<h2 id="跳转">跳转</h2>
+<h3 id="页内跳转">页内跳转</h3>
+<ol type="1">
+<li>使用markdown语法, 跳转到标题所在位置.</li>
+</ol>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line">[任意文字] (#标题名称)</span><br></pre></td></tr></tbody></table></figure>
+
+<ol start="2" type="1">
+<li>使用HTML语法,可以跳转到页面内任意位置</li>
+</ol>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">name</span>=<span class="string">"anchor"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#anchor"</span>&gt;</span>点击跳转到anchor<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">[点击跳转到anchor](#anchor)</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="图片">图片</h2>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line">markdown语法格式如下:</span><br><span class="line">![<span class="string">alt 属性文本</span>](<span class="link">图片地址</span>)</span><br><span class="line">![<span class="string">alt 属性文本</span>](<span class="link">图片地址 "可选标题"</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+<ul>
+<li>开头一个感叹号!</li>
+<li>接着一个方括号, 里面放图片代替的文字</li>
+<li>接着一个普通括号,里面放上图片的地址,最后还可以用引号包住并加上选择性的标题属性文字.</li>
+</ul>
+<p>markdown没有办法指定图片的高度,宽度,和位置,可以使用<code>&lt;img&gt;</code>标签</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"地址"</span> <span class="attr">width</span>=<span class="string">"50%"</span><span class="attr">height</span>=<span class="string">"50%"</span> /&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="表格">表格</h2>
+<h3 id="markdown表格">markdown表格</h3>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line">表格语法</span><br><span class="line">|表头1|表头2|表头3|</span><br><span class="line">|------| :-  -: |------:|</span><br><span class="line">|左对齐|居中对齐|右对齐|</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="html表格">HTML表格</h3>
+<pre style="height:300px;overflow-y:auto;"><code>&lt;table border="1" height="500" width="1000" cellspacing="0" align="center"&gt;
+    &lt;tr align="center"&gt;
+        &lt;td&gt;序号&lt;/td&gt;
+        &lt;td&gt;维修项目及更换配件&lt;/td&gt;
+        &lt;td&gt;单价&lt;/td&gt;
+        &lt;td&gt;数量&lt;/td&gt;
+        &lt;td&gt;小计&lt;/td&gt;
+        &lt;td&gt;工时费&lt;/td&gt;
+        &lt;td&gt;合计&lt;/td&gt;
+        &lt;td&gt;故障原因&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr align="center"&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr align="center"&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr align="center"&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr align="center"&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr align="center"&gt;
+        &lt;td&gt;5&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr align="center"&gt;
+        &lt;td&gt;6&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr align="center"&gt;
+        &lt;td rowspan="4"&gt;7&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td colspan="2" rowspan="4"&gt;&lt;/td&gt;
+        &lt;td rowspan="4"&gt;&lt;/td&gt;
+        &lt;td rowspan="4"&gt;&lt;/td&gt;
+        &lt;td rowspan="4"&gt;&lt;/td&gt;
+        &lt;td rowspan="4"&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr align="center"&gt;
+        &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr align="center"&gt;
+        &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr align="center"&gt;
+        &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr &gt;
+        &lt;td colspan="2"&gt;备件费用小计：&lt;/td&gt;
+        &lt;td colspan="5"&gt;工时费用小计：&lt;/td&gt;
+        &lt;td&gt;合计：&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code>
+</pre>
+
+<table border="2px">
+    <caption style="text-align:center;">HTML表格标签</caption>
+    <tbody><tr>
+        <th style="text-align:center;">标签</th>
+        <th style="text-align:center;">描述</th>
+        <th style="text-align:center;">标签</th>
+        <th style="text-align:center;">描述</th>
+    </tr>
+    <tr>
+        <td style="text-align:center;">table</td>
+        <td style="text-align:center;">定义表格</td>
+        <td style="text-align:center;">th</td>
+        <td style="text-align:center;">定义表格的表头</td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">tr</td>
+        <td style="text-align:center;">定义表格的行</td>
+        <td style="text-align:center;">td</td>
+        <td style="text-align:center;">定义表格的单元</td>
+    </tr>
+        <tr>
+        <td style="text-align:center;">caption</td>
+        <td style="text-align:center;">定义表格标题</td>
+        <td style="text-align:center;">colgroup</td>
+        <td style="text-align:center;">定义表格列的组</td>
+    </tr>
+    
+        <tr><td style="text-align:center;">col</td>
+        <td style="text-align:center;">定义表格列的属性</td>
+        <td style="text-align:center;">thead</td>
+        <td style="text-align:center;">定义表格页眉</td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">tbody</td>
+        <td style="text-align:center;">定义表格主体</td>
+        <td style="text-align:center;">tfoot</td>
+        <td style="text-align:center;">定义表格页脚</td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">rowspan=""</td>
+        <td style="text-align:center;">跨行单元格定义</td>
+        <td style="text-align:center;">colspan=""</td>
+        <td style="text-align:center;">跨列单元格定义</td>
+    </tr>
+</tbody></table>
+
+<h2 id="markdown高级技巧">markdown高级技巧</h2>
+<h3 id="支持html元素">支持HTML元素</h3>
+<p>不在markdown涵盖范围内的标签,可以直接在文档里面用HTLM撰写.</p>
+<p>example:</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line">使用<span class="tag">&lt;<span class="name">kbd</span>&gt;</span>Ctrl<span class="tag">&lt;/<span class="name">kbd</span>&gt;</span>+<span class="tag">&lt;<span class="name">kbd</span>&gt;</span>Alt<span class="tag">&lt;/<span class="name">kbd</span>&gt;</span>+<span class="tag">&lt;<span class="name">kbd</span>&gt;</span>del<span class="tag">&lt;/<span class="name">kbd</span>&gt;</span>重启电脑</span><br></pre></td></tr></tbody></table></figure>
+
+<p>使用<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>del</kbd>重启电脑</p>
+<h3 id="转义">转义</h3>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="strong">**粗体**</span></span><br><span class="line">\<span class="emphasis">*\*</span>粗体\<span class="emphasis">*\*</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>**粗体**</p>
+<h3 id="数学公式">数学公式</h3>
+<p>当需要在编辑器中插入数学公式时,可以使用<code>$$</code>包裹TeX或LaTeX格式的数学公式来实现</p>
+<figure class="highlight mathematica"><table><tbody><tr><td class="code"><pre><span class="line"><span class="variable">$$</span></span><br><span class="line">\<span class="variable">mathbf</span><span class="punctuation">{</span><span class="variable">V</span><span class="punctuation">}</span><span class="type">_</span><span class="number">1</span> \<span class="variable">times</span> \<span class="variable">mathbf</span><span class="punctuation">{</span><span class="variable">V</span><span class="punctuation">}</span><span class="type">_</span><span class="number">2</span> <span class="operator">=</span>  \<span class="variable">begin</span><span class="punctuation">{</span><span class="variable">vmatrix</span><span class="punctuation">}</span> </span><br><span class="line">\<span class="variable">mathbf</span><span class="punctuation">{</span><span class="variable">i</span><span class="punctuation">}</span> <span class="operator">&amp;</span> \<span class="variable">mathbf</span><span class="punctuation">{</span><span class="variable">j</span><span class="punctuation">}</span> <span class="operator">&amp;</span> \<span class="variable">mathbf</span><span class="punctuation">{</span><span class="variable">k</span><span class="punctuation">}</span> \\</span><br><span class="line">\<span class="variable">frac</span><span class="punctuation">{</span>\<span class="variable">partial</span> <span class="variable">X</span><span class="punctuation">}</span><span class="punctuation">{</span>\<span class="variable">partial</span> <span class="variable">u</span><span class="punctuation">}</span> <span class="operator">&amp;</span>  \<span class="variable">frac</span><span class="punctuation">{</span>\<span class="variable">partial</span> <span class="variable">Y</span><span class="punctuation">}</span><span class="punctuation">{</span>\<span class="variable">partial</span> <span class="variable">u</span><span class="punctuation">}</span> <span class="operator">&amp;</span> <span class="number">0</span> \\</span><br><span class="line">\<span class="variable">frac</span><span class="punctuation">{</span>\<span class="variable">partial</span> <span class="variable">X</span><span class="punctuation">}</span><span class="punctuation">{</span>\<span class="variable">partial</span> <span class="variable">v</span><span class="punctuation">}</span> <span class="operator">&amp;</span>  \<span class="variable">frac</span><span class="punctuation">{</span>\<span class="variable">partial</span> <span class="variable">Y</span><span class="punctuation">}</span><span class="punctuation">{</span>\<span class="variable">partial</span> <span class="variable">v</span><span class="punctuation">}</span> <span class="operator">&amp;</span> <span class="number">0</span> \\</span><br><span class="line">\<span class="variable">end</span><span class="punctuation">{</span><span class="variable">vmatrix</span><span class="punctuation">}</span></span><br><span class="line"><span class="variable">$</span><span class="punctuation">{</span><span class="variable">$tep1</span><span class="punctuation">}</span><span class="punctuation">{</span>\<span class="variable">style</span><span class="punctuation">{</span><span class="variable">visibility</span><span class="operator">:</span><span class="variable">hidden</span><span class="punctuation">}</span><span class="punctuation">{</span><span class="punctuation">(</span><span class="variable">x</span><span class="operator">+</span><span class="number">1</span><span class="punctuation">)</span><span class="punctuation">(</span><span class="variable">x</span><span class="operator">+</span><span class="number">1</span><span class="punctuation">)</span><span class="punctuation">}</span><span class="punctuation">}</span></span><br><span class="line"><span class="variable">$$</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>$$ \mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix} \mathbf{i}
+&amp; \mathbf{j} &amp; \mathbf{k} \ \frac{\partial X}{\partial u} &amp;
+\frac{\partial Y}{\partial u} &amp; 0 \ \frac{\partial X}{\partial v}
+&amp; \frac{\partial Y}{\partial v} &amp; 0 \ \end{vmatrix}
+${$tep1}{\style{visibility:hidden}{(x+1)(x+1)}} $$</p>
+<p><a href="https://blog.csdn.net/qq_18150255/article/details/88040858">数学公式表达详见</a></p>
+<h2 id="流程图">流程图</h2>
+<h3 id="横向流程图源码格式">横向流程图源码格式</h3>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">pre</span> <span class="attr">class</span>=<span class="string">"mermaid"</span>&gt;</span></span>graph LR</span><br><span class="line">A[方形] --&gt;B(圆角)</span><br><span class="line">B --&gt; C{条件A}</span><br><span class="line">C --&gt; |a=1| D[结果1]</span><br><span class="line">C --&gt; |a=2| E[结果2]</span><br><span class="line">F(横向流程图)<span class="language-xml"><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span></span><br></pre></td></tr></tbody></table></figure>
+
+<pre class="mermaid">graph LR
+A[方形] --&gt;B(圆角)
+B --&gt; C{条件A}
+C --&gt; |a=1| D[结果1]
+C --&gt; |a=2| E[结果2]
+F(横向流程图)</pre>
+
+<h3 id="竖向流程图源码格式">竖向流程图源码格式</h3>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">pre</span> <span class="attr">class</span>=<span class="string">"mermaid"</span>&gt;</span></span>graph LR</span><br><span class="line">A[方形] --&gt;B(圆角)</span><br><span class="line">B --&gt; C{条件A}</span><br><span class="line">C --&gt; |a=1| D[结果1]</span><br><span class="line">C --&gt; |a=2| E[结果2]</span><br><span class="line">F(横向流程图)<span class="language-xml"><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></span></span><br></pre></td></tr></tbody></table></figure>
+
+<pre class="mermaid">graph TD
+A[方形] --&gt;B(圆角)
+B --&gt; C{条件A}
+C --&gt; |a=1| D[结果1]
+C --&gt; |a=2| E[结果2]
+F(横向流程图)</pre>
+
+<h3 id="标准流程图源码格式">标准流程图源码格式</h3>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"flowchart-0"</span> <span class="attr">class</span>=<span class="string">"flow-chart"</span>&gt;</span></span><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></tbody></table></figure>
+
+<div id="flowchart-1" class="flow-chart"></div>
+
+<h3 id="标准流程图源码格式横向">标准流程图源码格式横向</h3>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"flowchart-2"</span> <span class="attr">class</span>=<span class="string">"flow-chart"</span>&gt;</span></span><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></tbody></table></figure>
+
+<div id="flowchart-3" class="flow-chart"></div>
+
+<h3 id="uml时序图源码样式">UML时序图源码样式</h3>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="code">```sequence</span></span><br><span class="line"><span class="code">对象A-&gt;对象B:对象B还好吗?(请求)</span></span><br><span class="line"><span class="code">Note right of 对象B:对象B的描述</span></span><br><span class="line"><span class="code">Note left of 对象A:对象A的描述</span></span><br><span class="line"><span class="code">对象B-&gt;对象A:我很好(响应)</span></span><br><span class="line"><span class="code">对象A-&gt;对象B:嗯</span></span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">```sequence</span><br><span class="line">对象A-&gt;对象B:对象B还好吗?(请求)</span><br><span class="line">Note right of 对象B:对象B的描述</span><br><span class="line">Note left of 对象A:对象A的描述</span><br><span class="line">对象B-&gt;对象A:我很好(响应)</span><br><span class="line">对象A-&gt;对象B:嗯</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="uml时序图源码复杂样例">UML时序图源码复杂样例</h3>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="code">```sequence</span></span><br><span class="line"><span class="code">Title: 标题：复杂使用</span></span><br><span class="line"><span class="code">对象A-&gt;对象B: 对象B你好吗?（请求）</span></span><br><span class="line"><span class="code">Note right of 对象B: 对象B的描述</span></span><br><span class="line"><span class="code">Note left of 对象A: 对象A的描述(提示)</span></span><br><span class="line"><span class="code">对象B--&gt;对象A: 我很好(响应)</span></span><br><span class="line"><span class="code">对象B-&gt;小三: 你好吗</span></span><br><span class="line"><span class="code">小三--&gt;&gt;对象A: 对象B找我了</span></span><br><span class="line"><span class="code">对象A-&gt;对象B: 你真的好吗？</span></span><br><span class="line"><span class="code">Note over 小三,对象B: 我们是朋友</span></span><br><span class="line"><span class="code">participant C</span></span><br><span class="line"><span class="code">Note right of C: 没人陪我玩</span></span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line"></span><br><span class="line">```sequence</span><br><span class="line">Title: 标题：复杂使用</span><br><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象B-&gt;小三: 你好吗</span><br><span class="line">小三--&gt;&gt;对象A: 对象B找我了</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br><span class="line">Note over 小三,对象B: 我们是朋友</span><br><span class="line">participant C</span><br><span class="line">Note right of C: 没人陪我玩</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="uml标准时序图样例">UML标准时序图样例</h3>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">pre</span> <span class="attr">class</span>=<span class="string">"mermaid"</span>&gt;</span></span>%% 时序图例子,-&gt; 直线，--&gt;虚线，-&gt;&gt;实线箭头</span><br><span class="line">  sequenceDiagram</span><br><span class="line"><span class="code">    participant 张三</span></span><br><span class="line"><span class="code">    participant 李四</span></span><br><span class="line"><span class="code">    张三-&gt;王五: 王五你好吗？</span></span><br><span class="line"><span class="code">    loop 健康检查</span></span><br><span class="line"><span class="code">        王五-&gt;王五: 与疾病战斗</span></span><br><span class="line"><span class="code">    end</span></span><br><span class="line"><span class="code">    Note right of 王五: 合理 食物 &lt;br/&gt;看医生...</span></span><br><span class="line"><span class="code">    李四--&gt;&gt;张三: 很好!</span></span><br><span class="line"><span class="code">    王五-&gt;李四: 你怎么样?</span></span><br><span class="line"><span class="code">    李四--&gt;王五: 很好!&lt;/pre&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<pre class="mermaid">%% 时序图例子,-&gt; 直线，--&gt;虚线，-&gt;&gt;实线箭头
+  sequenceDiagram
+    participant 张三
+    participant 李四
+    张三-&gt;王五: 王五你好吗？
+    loop 健康检查
+        王五-&gt;王五: 与疾病战斗
+    end
+    Note right of 王五: 合理 食物 <br>看医生...
+    李四--&gt;&gt;张三: 很好!
+    王五-&gt;李四: 你怎么样?
+    李四--&gt;王五: 很好!</pre>
+
+<h3 id="甘特图案例">甘特图案例</h3>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">pre</span> <span class="attr">class</span>=<span class="string">"mermaid"</span>&gt;</span></span>%% 语法示例</span><br><span class="line"><span class="code">        gantt</span></span><br><span class="line"><span class="code">        dateFormat  YYYY-MM-DD</span></span><br><span class="line"><span class="code">        title 软件开发甘特图</span></span><br><span class="line"><span class="code">        section 设计</span></span><br><span class="line"><span class="code">        需求                      :done,    des1, 2014-01-06,2014-01-08</span></span><br><span class="line"><span class="code">        原型                      :active,  des2, 2014-01-09, 3d</span></span><br><span class="line"><span class="code">        UI设计                     :         des3, after des2, 5d</span></span><br><span class="line"><span class="code">    未来任务                     :         des4, after des3, 5d</span></span><br><span class="line"><span class="code">        section 开发</span></span><br><span class="line"><span class="code">        学习准备理解需求                      :crit, done, 2014-01-06,24h</span></span><br><span class="line"><span class="code">        设计框架                             :crit, done, after des2, 2d</span></span><br><span class="line"><span class="code">        开发                                 :crit, active, 3d</span></span><br><span class="line"><span class="code">        未来任务                              :crit, 5d</span></span><br><span class="line"><span class="code">        耍                                   :2d</span></span><br><span class="line"><span class="code">        section 测试</span></span><br><span class="line"><span class="code">        功能测试                              :active, a1, after des3, 3d</span></span><br><span class="line"><span class="code">        压力测试                               :after a1  , 20h</span></span><br><span class="line"><span class="code">        测试报告                               : 48h&lt;/pre&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<pre class="mermaid">%% 语法示例
+        gantt
+        dateFormat  YYYY-MM-DD
+        title 软件开发甘特图
+        section 设计
+        需求                      :done,    des1, 2014-01-06,2014-01-08
+        原型                      :active,  des2, 2014-01-09, 3d
+        UI设计                     :         des3, after des2, 5d
+    未来任务                     :         des4, after des3, 5d
+        section 开发
+        学习准备理解需求                      :crit, done, 2014-01-06,24h
+        设计框架                             :crit, done, after des2, 2d
+        开发                                 :crit, active, 3d
+        未来任务                              :crit, 5d
+        耍                                   :2d
+        section 测试
+        功能测试                              :active, a1, after des3, 3d
+        压力测试                               :after a1  , 20h
+        测试报告                               : 48h</pre>
+
+<p><a href="https://kuang.netlify.app/markdown/markdown语法.html">markdown
+语法基础</a></p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=&gt;start: 开始框
+op=&gt;operation: 处理框
+cond=&gt;condition: 判断框
+sub=&gt;subroutine: 子流程
+io=&gt;inputoutput: 输入输出框
+e=&gt;end: 结束框
+st-&gt;op-&gt;cond
+cond(yes)-&gt;io-&gt;e
+cond(no)-&gt;sub(right)-&gt;op</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script><textarea id="flowchart-1-code" style="display: none">st=&gt;start: 开始框
+op=&gt;operation: 处理框
+cond=&gt;condition: 判断框
+sub=&gt;subroutine: 子流程
+io=&gt;inputoutput: 输入输出框
+e=&gt;end: 结束框
+st-&gt;op-&gt;cond
+cond(yes)-&gt;io-&gt;e
+cond(no)-&gt;sub(right)-&gt;op</textarea><textarea id="flowchart-1-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-1-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-1-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-1", options);</script><textarea id="flowchart-2-code" style="display: none">st=&gt;start: 开始框
+op=&gt;operation: 处理框
+cond=&gt;condition: 判断框
+sub=&gt;subroutine: 子流程
+io=&gt;inputoutput: 输入输出框
+e=&gt;end: 结束框
+st(right)-&gt;op(right)-&gt;cond
+cond(yes)-&gt;io(bottom)-&gt;e
+cond(no)-&gt;sub(right)-&gt;op</textarea><textarea id="flowchart-2-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-2-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-2-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-2", options);</script><textarea id="flowchart-3-code" style="display: none">st=&gt;start: 开始框
+op=&gt;operation: 处理框
+cond=&gt;condition: 判断框
+sub=&gt;subroutine: 子流程
+io=&gt;inputoutput: 输入输出框
+e=&gt;end: 结束框
+st(right)-&gt;op(right)-&gt;cond
+cond(yes)-&gt;io(bottom)-&gt;e
+cond(no)-&gt;sub(right)-&gt;op</textarea><textarea id="flowchart-3-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-3-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-3-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-3", options);</script>
+
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>文本编辑语言<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+]]></content>
+      <categories>
+        <category>语法教程</category>
+      </categories>
+      <tags>
+        <tag>markdwon</tag>
+      </tags>
+  </entry>
+</search>
