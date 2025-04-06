@@ -1,3 +1,3 @@
-var posts=["2025/03/30/markdown-syntax/"];function toRandomPost(){
+var posts=["62d4f2eb72d6/"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };
