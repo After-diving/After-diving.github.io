@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>markdown syntax</title>
-    <url>/62d4f2eb72d6/</url>
+    <url>/ace500025b9e/</url>
     <content><![CDATA[<h1 id="markdown-syntax">Markdown Syntax</h1>
 <h2 id="标题">标题</h2>
 <figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="section"># //一级标题, 记得#后面有空格</span></span><br><span class="line"><span class="section">## //二级标题</span></span><br><span class="line"><span class="section">### //三级标题</span></span><br><span class="line">......最多六级标题</span><br></pre></td></tr></tbody></table></figure>
@@ -170,7 +170,7 @@
 
 <h2 id="表格">表格</h2>
 <h3 id="markdown表格">markdown表格</h3>
-<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line">表格语法</span><br><span class="line">|表头1|表头2|表头3|</span><br><span class="line">|------| :-  -: |------:|</span><br><span class="line">|左对齐|居中对齐|右对齐|</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line">表格语法</span><br><span class="line">| 表头1 | 表头2 | 表头3 |</span><br><span class="line">| ----- | :---- | ----: |: |</span><br><span class="line">| 左对齐 | 居中对齐 | 右对齐 |</span><br></pre></td></tr></tbody></table></figure>
 
 <h3 id="html表格">HTML表格</h3>
 <pre style="height:300px;overflow-y:auto;"><code>&lt;table border="1" height="500" width="1000" cellspacing="0" align="center"&gt;
@@ -462,10 +462,10 @@ cond(no)-&gt;sub(right)-&gt;op</textarea><textarea id="flowchart-3-options" styl
 </section>
 ]]></content>
       <categories>
-        <category>语法教程</category>
+        <category>编程学习</category>
       </categories>
       <tags>
-        <tag>markdwon</tag>
+        <tag>markdown</tag>
       </tags>
   </entry>
 </search>
